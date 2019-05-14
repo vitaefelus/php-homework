@@ -17,7 +17,8 @@
         "symfony/framework-bundle": "3.4.*",
         "symfony/translation": "3.4.*",
         "symfony/twig-bundle": "3.4.*",
-        "symfony/yaml": "3.4.*"
+        "symfony/yaml": "3.4.*",
+        "twig/extensions": "^1.5"
     },
     "config": {
         "preferred-install": {
@@ -45,7 +46,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "security-checker security:check": "script"
         },
         "post-install-cmd": [
             "@auto-scripts",
